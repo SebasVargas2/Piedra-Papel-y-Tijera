@@ -36,8 +36,7 @@ function trys() {
     const intento=document.getElementById('intentos')
     intentos=intento.value
     intento.value=''
-    contenido+=`<br>Que empiece el juego, Selecciona una opcion:`
-    document.getElementById('pantalla').innerHTML=contenido
+    alert('Que empiece el juego')
     maquina()
     varios()
 }
@@ -104,13 +103,13 @@ function varios(){
 
 function final(){
     contenido=''
-    contenido+=`<br><table style="border: 1px solid black;">`
-    contenido+=`<th>Resultados</th>`
-    contenido+=`<th>Victorias</th>`
+    contenido+=`<table>`
+    contenido+=`<tr><th colspan="2">Resultados de Victorias</th></tr>`
     contenido+=`<tr><td>Jugador</td>`
     contenido+=`<td>${ganador}</td></tr>`
     contenido+=`<tr><td>Maquina</td>`
     contenido+=`<td>${ganopc}</td></tr>`
+    contenido+=`</table>`
     document.getElementById('pantalla2').innerHTML=contenido 
 }
 
@@ -126,8 +125,9 @@ function alerta(){
 
 function acercade(){
     contenido=''
-    contenido+=`<br>Proyecto presentado por:<br>`
-    contenido+=`Sebastian Andres Vargas Paez`
+    contenido+='<br>'
+    contenido+=`<h2>Proyecto creado por:</h2>`
+    contenido+=`<h3>Sebastian Andres Vargas Paez<h3>`
     
     document.getElementById('pantalla2').innerHTML=contenido
 }

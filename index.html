@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-CO">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piedra, Papel y Tijera</title>
     <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Numero de juegos <input type="number" id="intentos">
-    <button id="enviar" type="submit">Enviar</button>
-    <div id="pantalla"></div><br>
-    <button id="piedra" type="submit">PIEDRA</button>
-    <button id="papel" type="submit">PAPEL</button>
-    <button id="tijera" type="submit">TIJERA</button><br><br>
-    <button id="reseteo" type="submit">RESETEAR</button>
-    <button id="acerca" type="submit">ACERCA DE</button>
-    <div id="pantalla2"></div><br>
+    <h1>ROCK, PAPER AND SCISSORS</h1>
+    <div class="seleccion">
+        <label for="intentos"><h2>Number Of Games</h2></label>
+        <input type="number" id="intentos" max="20"><br>
+        <button id="enviar" type="submit">Start the Game</button>
+    <div class="total">
+        <div>
+        <div class="juego">
+            <button id="piedra" type="submit"><img src="assets/rock.png" alt="rock" width="100px"></button>
+            <button id="papel" type="submit"><img src="assets/paper.png" alt="paper" width="100px"></button>
+            <button id="tijera" type="submit"><img src="assets/scissors.png" alt="tijera" width="100px"></button>
+        </div>
+        <div class="options">
+            <button id="reseteo" type="submit">RESET</button>
+            <button id="acerca" type="submit">ABOUT</button>
+        </div>
+        <div id="pantalla2"></div>
+    </div>
 </body>
 </html>

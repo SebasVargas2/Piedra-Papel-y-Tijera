@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(black,rgb(71, 70, 70));
+}
+
+h1 {
+    padding-top: 30px;
+    color: rgba(0, 255, 255, 0.712);
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+}
+
+.seleccion {
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+#intentos{
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#enviar {
+    padding: 10px 60px;
+    margin: 10px;
+    background-color: rgba(0, 255, 255, 0.712);
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 2px  2px 10px white;
+}
+
+#reseteo, #acerca {
+    background-color: rgba(0, 255, 255, 0.712);
+    border-radius: 5px;
+    padding: 10px 40px;
+    box-shadow: 2px  2px 10px white;
+}
+
+#enviar:hover, #reseteo:hover, #acerca:hover{
+    background-color: rgb(26, 211, 72);
+    cursor: pointer;
+}
+
+.juego {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.options {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+
+
+table, td {
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px 40px;
+    width: 50%;
+    margin: auto;
+}
+
+#pantalla2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.total {
+    padding: 20px;
+}
+
+#piedra, #tijera, #papel{
+    border: 2px solid;
+    border-color: rgb(100, 99, 99);
+    border-radius: 5px;
+}
+
+#piedra:hover, #tijera:hover, #papel:hover{
+    cursor: url(assets/cursor.png),pointer;
+    border: 2px solid;
+    border-color: rgba(0, 255, 255, 0.712);
+
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
